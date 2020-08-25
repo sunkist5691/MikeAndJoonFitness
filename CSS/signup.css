@@ -1,0 +1,126 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/* general resets */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+/* RESET ENDS */
+
+/* header */
+header {
+  background-color: #ff9233;
+  padding: .4% 0;
+}
+
+header div {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/* sign up */
+#wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#wrapper section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+#wrapper section h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+
+/* sign up info */
+#info {
+  display:flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 60vh;
+}
+
+#info input, #confirm {
+  font-size: 2rem;
+  width: 70%;
+  margin: 2% 0;
+  padding: 2% 0 1% 2%;
+  border-radius: 0.5rem;
+  border: solid 1px #bdbdbd;
+}
+
+#confirm {
+  text-align: center;
+  color: black;
+  letter-spacing: 0.1rem;
+  background-color: #bdbdbd;
+  transition: all .2s ease-in-out; 
+}
+
+#confirm:hover {
+  color: white;
+  background-color: #ff9233;
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+img {
+  width: 50%;
+}
+
+@media (max-width: 1000px) {
+  img {
+    width: 60%;
+  }
+
+  #info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  img{
+    display: none;
+  }
+  
+  #wrapper {
+    justify-content: center;
+    align-items: center;
+    background-image: url(../course-image/fitnesswomen.jpg);
+    background-size: cover;
+  }
+
+  #wrapper h1 {
+    margin-top: 10%;
+    color: white;
+  }
+
+  #wrapper section {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  #info input, #confirm {
+    font-size: 1.8rem;
+  }
+
+  #confirm {
+    margin-top: 5%;
+    padding-bottom: 2%;
+  }
+}
