@@ -1,0 +1,233 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+* {
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  max-width:100%;
+}
+
+html {
+  font-size:62.5%;
+}
+
+/* RESET ENDS */
+
+/* nav bar */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.8% 0;
+}
+
+header h2 {
+  font-size: 3.5rem;
+  font-family: 'Abril Fatface', sans-serif;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  width: 40%;
+  margin-left: 2%;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 15%;
+}
+
+header nav a {
+  font-size: 2rem;
+  font-family: 'Abril Fatface', sans-serif;;
+  text-decoration: none;
+  color: black;
+  padding: 0 3%;
+  transition: all .2s ease-in-out;
+}
+
+header nav a:hover {
+  color: #ff9233;
+  transform: scale(1.1);
+}
+
+/* banners */
+#banner {
+  text-align: center;
+  background: #ff9233;
+  padding: .7% 0;
+}
+
+#banner div {
+  font-size: 2.1rem;
+}
+
+#banner-search {
+  letter-spacing: 0.4rem;
+  padding: 2% 0;
+  text-align: center;
+}
+
+#banner-search h1{
+  font-size: 5.5rem;
+}
+
+/* search bar */
+form {
+  text-align: center;
+}
+
+form input {
+  width: 30%;
+  padding: 0.6% 0.9%;
+  font-size: 2rem;
+  font-family: sans-serif;
+  border-radius: 0.4rem;
+}
+
+/* list of courses */
+#course {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 4% 2%;
+}
+
+#course .classes {
+  border-radius: 3rem;
+  padding: 10% 0;
+  width: 25%;
+  margin: 0 2% 4% 2%;
+  transition: all .2s ease-in-out;
+}
+
+#course .classes:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#course .classes .class-name {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+
+/* image for list of courses */
+#yoga {
+  background-image: url(../course-image/yoga.jpg);
+  background-size: cover;
+}
+
+#pilates {
+  background-image: url(../course-image/pilates.jpg);
+  background-size: cover;
+}
+
+#running {
+  background-image: url(../course-image/running.jpg);
+  background-size: cover;
+}
+
+#weight {
+  background-image: url(../course-image/weightlifting.jpg);
+  background-size: cover;
+}
+
+#swimming {
+  background-image: url(../course-image/swimming.jpg);
+  background-size: cover;
+}
+
+#dancing {
+  background-image: url(../course-image/dancing.jpg);
+  background-size: cover;
+}
+
+#biking {
+  background-image: url(../course-image/biking.jpg);
+  background-size: cover;
+}
+
+#climbing {
+  background-image: url(../course-image/climbing.jpg);
+  background-size: cover;
+}
+
+#skate {
+  background-image: url(../course-image/skateboarding.jpg);
+  background-size: cover;
+}
+
+/* footer */
+footer {
+  background-color: #ff9233;
+  padding: .4% 0;
+}
+
+footer div {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  header h2 {
+    font-size: 2.5rem;
+    width: 30%;
+  }
+
+  #banner-search h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    justify-content: center;
+  }
+
+  header h2 {
+    display: none;
+  }
+
+  header nav {
+    width: 50%;
+  }
+
+  header nav a {
+    font-size: 1.5rem;
+  }
+
+  #banner-search h1 {
+    font-size: 4rem;
+  }
+
+  #course {
+    justify-content: center;
+  }
+
+  #course .classes {
+    width: 35%;
+  }
+
+}
+
+@media (max-width: 500px) {
+  header {
+    margin: 2% 0;
+  }
+
+  #banner-search {
+    display: none;
+  }
+
+  #banner div {
+    font-size: 1.7rem;
+  }
+  form input {
+    margin-top: 4%;
+    font-size: 1.7rem;
+    width: 50%;
+  }
+}
+

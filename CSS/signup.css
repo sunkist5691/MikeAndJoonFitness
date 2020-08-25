@@ -1,8 +1,6 @@
 /* import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
-
 /* general resets */
 * {
   box-sizing: border-box;
@@ -11,163 +9,118 @@
   max-width: 100%;
 }
 
-/* imports and resets END */
-
-header h1  {
-  padding: 10% 0 40% 0;
-  border-top: solid 1px gray;
-  background: url('../images-signup-searching/outsidefitness.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-attachment: fixed;
+html {
+  font-size: 62.5%;
 }
+/* RESET ENDS */
 
-header h1 a {
-  display: block;
-  margin: 0 auto;
-  width: 15%;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  font-size: 3.5rem;
-  font-family: 'Abril Fatface';
-  letter-spacing: 0.3rem;
-}
-
-header h1 a:hover{
-  color: white;
-  cursor: pointer;
-}
-
-/* sign-up both instructor and student */
-
-#sign-up {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 5%;
-}
-.info {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.info h1 {
-  margin-bottom: 5%;
-  text-align: center;
-  letter-spacing: .2rem;
-  font-size: 3rem;
-  font-family: 'Abril Fatface';
-  width: 100%;
-}
-
-/* text input */
-
-.wrap-input {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 80%;
-}
-.wrap-input input {
-  width: 51%;
-  margin-bottom: 3%;
-  padding: 10px 20px;
-  border-radius: 0.3rem;
-}
-
-/* confirm button */
-.info .confirm {
-  margin-top: 2%;
-  padding: 10px 60px;
-  text-align: center;
-  color: white;
-  background-color: grey;
-  border: 1px solid grey; 
-  
-}
-
-.info .confirm:hover {
-  cursor: pointer;
-  transition: transform 1s;
-}
-
-/* footer */
-footer {
-  display:flex;
-  justify-content: center;
-  align-content: center;
-  margin-top: 20%;
-  padding-top: .5%;
-  text-align: center;
+/* header */
+header {
   background-color: #ff9233;
+  padding: .4% 0;
 }
 
-footer div {
+header div {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/* sign up */
+#wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#wrapper section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+#wrapper section h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+
+/* sign up info */
+#info {
+  display:flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 60vh;
+}
+
+#info input, #confirm {
+  font-size: 2rem;
+  width: 70%;
+  margin: 2% 0;
+  padding: 2% 0 1% 2%;
+  border-radius: 0.5rem;
+  border: solid 1px #bdbdbd;
+}
+
+#confirm {
+  text-align: center;
+  color: black;
+  letter-spacing: 0.1rem;
+  background-color: #bdbdbd;
+  transition: all .2s ease-in-out; 
+}
+
+#confirm:hover {
   color: white;
-  margin-bottom: .5%;
+  background-color: #ff9233;
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+img {
+  width: 50%;
 }
 
 @media (max-width: 1000px) {
-  header h1 a {
-    width: 50%;
+  img {
+    width: 60%;
+  }
+
+  #info {
+    width: 100%;
   }
 }
 
 @media (max-width: 800px) {
-  header h1 {
-    background: none;
-    padding-bottom: 10%;
+  img{
+    display: none;
+  }
+  
+  #wrapper {
+    justify-content: center;
+    align-items: center;
+    background-image: url(../course-image/fitnesswomen.jpg);
+    background-size: cover;
   }
 
-  header h1 a {
-    font-size: 2.5rem;
-    border-bottom: solid 1px gray;
-    padding-bottom: 2%;
-    width: 70%;
+  #wrapper h1 {
+    margin-top: 10%;
+    color: white;
   }
 
-  .info h1 {
-    font-size: 2rem;
-  }
-
-  #sign-up {
-    flex-wrap: wrap;
-  }
-
-  .info {
-    width: 70%;
-    margin-top: 3%;
-  }
-
-  .wrap-input {
-    width: 100%;
-  }
-
-  header h1 a:hover{
-    color: black;
+  #wrapper section {
+    width: 80%;
   }
 }
 
 @media (max-width: 500px) {
-  header h1 {
-    padding-bottom: 3%;
+  #info input, #confirm {
+    font-size: 1.8rem;
   }
 
-  header h1 a {
-    font-size: 2rem;
-  }
-
-  .info h1 {
-    font-size: 1.5rem;
-  }
-
-  .info {
-    width: 100%;
-  }
-
-  footer {
-    margin-top: 60%;
+  #confirm {
+    margin-top: 5%;
+    padding-bottom: 2%;
   }
 }
