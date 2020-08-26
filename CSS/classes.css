@@ -84,6 +84,7 @@ form input {
   font-size: 2rem;
   font-family: sans-serif;
   border-radius: 0.4rem;
+  border: solid 1px #bdbdbd; 
 }
 
 /* list of courses */
