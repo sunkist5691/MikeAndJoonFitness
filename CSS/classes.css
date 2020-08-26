@@ -100,17 +100,18 @@ form input {
   padding: 10% 0;
   width: 25%;
   margin: 0 2% 4% 2%;
+  opacity: 0.5;
   transition: all .2s ease-in-out;
 }
 
 #course .classes:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
   cursor: pointer;
 }
 
 #course .classes .class-name {
   font-size: 3rem;
-  color: white;
+  color: black;
   text-align: center;
 }
 
