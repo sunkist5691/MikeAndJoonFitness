@@ -31,10 +31,14 @@ header div {
   justify-content: space-between;
 }
 
+#wrapper img {
+  width: 50%;
+}
+
 #wrapper section {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 50%;
 }
@@ -42,6 +46,7 @@ header div {
 #wrapper section h1 {
   text-align: center;
   font-size: 5rem;
+  margin-top: 20%;
 }
 
 /* sign up info */
@@ -51,7 +56,7 @@ header div {
   justify-content: center;
   align-items: center;
   width: 80%;
-  height: 60vh;
+  height: 40vh;
 }
 
 #info input, #confirm {
@@ -76,24 +81,48 @@ header div {
   background-color: #ff9233;
   cursor: pointer;
   transform: scale(1.03);
+  border: solid 1px white;
 }
 
-img {
+#wrapper section .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   width: 50%;
+  height: 40vh;
+  margin-bottom: 3%;
 }
 
-@media (max-width: 1000px) {
-  img {
+#wrapper section .container a {
+  font-size: 1.6rem;
+  color: grey;
+  transition: color .2s;
+  transition: border-top .2s;
+  margin: 0 5%;
+  text-decoration: none;
+}
+
+#wrapper section .container a:hover {
+  color: #ff9233;
+  border-top: solid 2px #ff9233;
+  padding-top: 1%;
+}
+
+@media (max-width: 1024px) {
+  #wrapper img {
     width: 60%;
   }
 
   #info {
     width: 100%;
   }
+  #info input {
+    font-size: 1.7rem;
+  }
 }
 
 @media (max-width: 800px) {
-  img{
+  #wrapper img{
     display: none;
   }
   
@@ -112,6 +141,20 @@ img {
   #wrapper section {
     width: 80%;
   }
+
+  #info {
+    height: 90vh;
+  }
+
+  #wrapper section .container a {
+    color: white;
+    padding-bottom: 10%;
+  }
+
+  #confirm:hover {
+    border: solid 1px #ff9233;
+  }
+
 }
 
 @media (max-width: 500px) {
